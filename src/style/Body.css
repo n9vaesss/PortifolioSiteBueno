@@ -1,0 +1,748 @@
+.main-body{
+    width: 100%;
+    display: flex;
+}
+
+.body-image{
+    width: 100%; 
+    height: 810px;
+
+    background-image: url('../image/fundoRafaBueno1.png');
+    
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.body-align-image{
+    width: 100%;
+    display: flex;
+}
+
+.body-align-image .img{
+    display: flex;
+    margin: auto;
+    align-items: center;
+}
+
+.img .dana{
+    width: 300px;
+    margin: 60px 40px 0px 40px;
+}
+
+.img .apresenta{
+    margin: 60px 40px 0px 40px;
+}
+
+.body-align{
+    width: 100%;
+    height: 300px;
+    margin: auto;
+
+    top: 380px;
+    position: absolute;
+}
+
+/*CARROSEL*/
+
+iframe{
+    width: 900px;
+    height: 490px;
+
+    border: none;
+
+    position: relative;
+    z-index: 1;
+}
+
+.container{
+    height: 300px;
+}
+
+.container .carrossel{
+    display: flex;
+    margin: auto;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+
+    width: 905px;
+    height: 500px;
+}
+  
+.container .carrossel::-webkit-scrollbar{
+    display: none;
+}
+  
+.container .carrossel .item{
+    width: 100%;
+    border-radius: 15px;
+}
+  
+.container .buttons{
+    width: 100%;
+    margin-top: 18px;
+    text-align: center;
+}
+  
+.container .buttons button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    position: relative;
+    z-index: 2;
+}
+  
+.container .buttons button:first-child img{
+    transform: rotate(180deg);
+}
+
+/*BODY WHITE*/
+
+.body-white{
+    width: 100%;
+    height: 900px;
+    display: flex;
+
+    margin-top: 450px;
+
+    background-color: white;
+
+    position: relative;
+    z-index: 0;
+}
+
+.body-white-align{
+    margin: 165px auto;
+    width: 905px;
+}
+
+hr{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.linha1{
+    width: 818px;
+}
+
+.linha2{
+    width: 792px;
+}
+
+.patrocinios{
+    margin-top: 20px;
+    width: 100%;
+}
+
+.bi { grid-area:bi ; }
+.st { grid-area:st ; }
+.lo { grid-area:lo ; }
+.ju { grid-area:ju ; }
+.ag { grid-area:ag ; }
+.rc { grid-area:rc ; }
+.di { grid-area:di ; }
+.vi { grid-area:vi ; }
+.mo { grid-area:mo ; }
+.od { grid-area:od ; }
+.cn { grid-area:cn ; }
+.id { grid-area:id ; }
+.pi { grid-area:pi ; }
+.va1 { grid-area:va1 ; }
+.va2 { grid-area:va2 ; }
+
+.img-patrocinios{
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+    'bi st lo ju ag'
+    'rc di vi mo od'
+    'va1 cn id pi va2 '
+    ;
+}
+
+.img-patrocinios img{
+    width: 180px;
+}
+
+/*BODY BIO*/
+
+.body-bio{
+    width: 100%;
+    background-color: var(--bg-body-color);
+}
+
+.body-align-bio{
+    margin: auto;
+    padding: 40px;
+    width: 900px;
+
+    text-align: justify;
+    
+}
+
+.body-bio p{
+    color: var(--text-body-blue-color);
+    font-weight: bolder;
+}
+
+.body-bio h1{
+    text-align: center;
+
+    color: var(--text-body-blue-color);
+
+    font-size: 33px;
+    font-weight: bolder;
+}
+
+/*BODY INPUT*/
+
+.body-input{
+    width: 900px;
+    margin: auto;
+}
+
+.input-nome { grid-area:nome ; }
+.input-email { grid-area:email ; }
+.input-mensagem { grid-area:mensagem ; }
+.input-button { grid-area:button ; }
+
+.align-input{
+    display: grid;
+    grid-template-areas: 
+    'nome nome email email'
+    'mensagem mensagem mensagem mensagem'
+    'button button button button';
+
+    margin-top: 35px;
+}
+
+.input-nome{
+    font-weight: bolder;
+    width: 405px;
+    padding: 12px;
+    margin-bottom: 35px;
+}
+
+.input-email{
+    font-weight: bolder;
+    width: 405px;
+    padding: 12px;
+    margin-left: 42px;
+    margin-bottom: 35px;
+}
+
+.input-mensagem{
+    font-weight: bolder;
+    height: 100px;
+    padding: 10px;
+    margin-bottom: 35px;
+}
+
+.input-button{
+    height: 55px;
+
+    font-weight: bolder;
+    font-size: 25px;
+
+    background-color: var(--button-body-color);
+    color: var(--text-button-color);
+
+    border: none;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .body-image{
+        height: 600px;
+    }
+
+    iframe{
+        width: 750px;
+        height: 409px;
+    }
+
+    .container .carrossel{
+        width: 750px;
+        height: 409px;
+    }
+
+    .body-white-align{
+        margin: 70px  auto;
+        width: 750px;
+    }
+
+    .linha1{
+        width: 682px;
+    }
+    
+    .linha2{
+        width: 637px;
+    }
+
+    .img-patrocinios img{
+        width: 150px;
+    }
+
+    .body-align-bio{
+        width: 750px;
+    }
+
+    .body-input{
+        width: 750px;
+        margin: auto;
+    }
+
+    .align-input{
+        grid-template-areas: 
+        'nome'
+        'email'
+        'mensagem'
+        'button';
+    }
+
+    .input-nome{
+        width: 720px;
+    }
+    
+    .input-email{
+        width: 720px;
+        margin-left: 0px;
+    }
+    
+    .input-mensagem{
+        width: 720px;
+    }
+    
+    .input-button{
+        width: 750px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .body-image{
+        height: 600px;
+    }
+
+    iframe{
+        width: 750px;
+        height: 409px;
+    }
+
+    .container .carrossel{
+        width: 750px;
+        height: 409px;
+    }
+
+    .body-white-align{
+        margin: 70px  auto;
+        width: 750px;
+    }
+
+    .linha1{
+        width: 682px;
+    }
+    
+    .linha2{
+        width: 637px;
+    }
+
+    .img-patrocinios img{
+        width: 150px;
+    }
+
+    .body-align-bio{
+        width: 750px;
+    }
+
+    .body-input{
+        width: 750px;
+        margin: auto;
+    }
+
+    .align-input{
+        grid-template-areas: 
+        'nome'
+        'email'
+        'mensagem'
+        'button';
+    }
+
+    .input-nome{
+        width: 720px;
+    }
+    
+    .input-email{
+        width: 720px;
+        margin-left: 0px;
+    }
+    
+    .input-mensagem{
+        width: 720px;
+    }
+    
+    .input-button{
+        width: 750px;
+    }
+}
+
+@media only screen and (max-width: 830px) {
+    .body-image{
+        height: 530px;
+    }
+
+    iframe{
+        width: 600px;
+        height: 327px;
+    }
+
+    .container .carrossel{
+        width: 600px;
+        height: 327px;
+    }
+
+    .body-white{
+        height: 1200px;
+    }
+
+    .body-white-align{
+        margin: 0px auto;
+        width: 600px;
+    }
+
+    .linha1{
+        width: 532px;
+    }
+    
+    .linha2{
+        width: 487px;
+    }
+
+    .img-patrocinios{
+        width: 100%;
+        display: grid;
+        grid-template-areas: 
+        'bi st lo '
+        'ju ag rc '
+        'di vi mo '
+        'od cn id'
+        'va1 pi va2'
+        ;
+    }
+
+    .img-patrocinios img{
+        width: 200px;
+    }
+
+    .body-align-bio{
+        width: 600px;
+    }
+
+    .body-input{
+        width: 600px;
+        margin: auto;
+    }
+
+    .input-nome{
+        width: 576px;
+    }
+    
+    .input-email{
+        width: 576px;
+        margin-left: 0px;
+    }
+    
+    .input-mensagem{
+        width: 576px;
+    }
+    
+    .input-button{
+        width: 600px;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+
+    *{
+        font-size: 15px;
+    }
+
+    .body-image{
+        height: 450px;
+    }
+
+    .img .dana{
+        width: 200px;
+        margin: 120px 40px 0px 40px;
+    }
+    
+    .img .apresenta{
+        width: 100px;
+        margin: 120px 40px 0px 40px;
+    }
+
+    iframe{
+        width: 450px;
+        height: 245px;
+    }
+
+    .container .carrossel{
+        width: 450px;
+        height: 245px;
+    }
+
+    .body-white{
+        margin-top: 350px;
+        height: 1250px;
+    }
+
+    .body-white-align{
+        margin: 0px auto;
+        width: 450px;
+    }
+
+    .linha1{
+        width: 393px;
+    }
+    
+    .linha2{
+        width: 355px;
+    }
+
+    .img-patrocinios{
+        width: 100%;
+        display: grid;
+        grid-template-areas: 
+        'bi st'
+        'lo ju'
+        'ag rc'
+        'di vi'
+        'mo od'
+        'cn id'
+        'pi pi'
+        'va1 va2'
+        ;
+    }
+
+    .img-patrocinios img{
+        margin-left: 34px;
+        width: 150px;
+    }
+
+    .body-align-bio{
+        width: 450px;
+    }
+
+    .body-input{
+        width: 450px;
+        margin: auto;
+    }
+
+    .input-nome{
+        width: 423px;
+    }
+    
+    .input-email{
+        width: 423px;
+        margin-left: 0px;
+    }
+    
+    .input-mensagem{
+        width: 427px;
+    }
+    
+    .input-button{
+        width: 450px;
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    *{
+        font-size: 12px;
+    }
+
+    .body-image{
+        height: 450px;
+    }
+
+    .img .dana{
+        width: 170px;
+        margin: 150px 40px 0px 40px;
+    }
+    
+    .img .apresenta{
+        width: 100px;
+        margin: 150px 40px 0px 40px;
+    }
+
+    iframe{
+        width: 380px;
+        height: 213px;
+    }
+
+    .container .carrossel{
+        width: 380px;
+        height: 213px;
+    }
+
+    .body-white{
+        margin-top: 350px;
+        height: 1450px;
+    }
+
+    .body-white-align{
+        margin: 0px auto;
+        width: 380px;
+    }
+
+    .linha1{
+        width: 380px;
+    }
+    
+    .linha2{
+        width: 380px;
+    }
+
+    .img-patrocinios{
+        width: 100%;
+        display: grid;
+        grid-template-areas: 
+        'bi st'
+        'lo ju'
+        'ag rc'
+        'di vi'
+        'mo od'
+        'cn id'
+        'pi pi'
+        'va1 va2'
+        ;
+    }
+
+    .img-patrocinios img{
+        margin-left: 10px;
+        width: 150px;
+    }
+
+    .body-align-bio{
+        width: 380px;
+    }
+
+    .body-input{
+        width: 380px;
+        margin: auto;
+    }
+
+    .input-nome{
+        width: 355px;
+    }
+    
+    .input-email{
+        width: 355px;
+        margin-left: 0px;
+    }
+    
+    .input-mensagem{
+        width: 355px;
+    }
+    
+    .input-button{
+        width: 380px;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+
+    *{
+        font-size: 10px;
+    }
+
+    .body-image{
+        height: 400px;
+    }
+
+    .img .dana{
+        width: 120px;
+        margin: 190px 40px 0px 40px;
+    }
+    
+    .img .apresenta{
+        width: 80px;
+        margin: 190px 40px 0px 40px;
+    }
+
+    iframe{
+        width: 300px;
+        height: 167px;
+    }
+
+    .container .carrossel{
+        width: 300px;
+        height: 167px;
+    }
+
+    .body-white{
+        margin-top: 260px;
+        height: 900px;
+    }
+
+    .body-white-align{
+        margin: 0px auto;
+        width: 300px;
+    }
+
+    .linha1{
+        width: 254px;
+    }
+    
+    .linha2{
+        width: 224px;
+    }
+
+    .img-patrocinios{
+        width: 100%;
+        display: grid;
+        grid-template-areas: 
+        'bi st'
+        'lo ju'
+        'ag rc'
+        'di vi'
+        'mo od'
+        'cn id'
+        'pi pi'
+        'va1 va2'
+        ;
+    }
+
+
+    .img-patrocinios img{
+        margin-left: 20px;
+        width: 100px;
+    }
+
+    .body-align-bio{
+        width: 300px;
+    }
+
+    .body-input{
+        width: 300px;
+        margin: auto;
+    }
+
+    .input-nome{
+        width: 276px;
+    }
+    
+    .input-email{
+        width: 276px;
+        margin-left: 0px;
+    }
+    
+    .input-mensagem{
+        width: 276px;
+    }
+    
+    .input-button{
+        width: 300px;
+    }
+}

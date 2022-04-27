@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+
+
+:root{
+    --bg-nav-color:#001827;
+
+    --button-nav-on-color:#79c0db;
+
+    --button-nav-off-color:#00445e;
+
+    --whatsapp-color:#7ad06d;
+
+    --instagram-color:#ffffff;
+
+    --bg-body-color:#001f32;
+
+    --button-body-color:#00445e;
+
+    --text-body-white-color:#000000;
+
+    --text-body-blue-color:#ffffff;
+
+    --text-button-color:#0a7fac;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+a:hover{
+    cursor: pointer;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 680px) {
+    
+    *{
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    
+    *{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    *{
+        font-size: 10px;
+    }
+}

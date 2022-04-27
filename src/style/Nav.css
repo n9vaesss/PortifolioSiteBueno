@@ -1,0 +1,269 @@
+.main-nav{
+    width: 100%;
+    display: flex;
+    height: 110px;
+    align-items: center;
+
+    background-color: var(--bg-nav-color);
+}
+
+/*NAV LEFT*/
+.nav-left{
+    display: flex;
+    flex: 50%;
+    height: 110px;
+    align-items: center;
+}
+
+.nav-left-1{
+    flex: 45%;
+}
+
+.nav-left-2{
+    flex:55%;
+}
+
+.nav-left-2 div img{
+    width: 350px;
+    opacity: 0.4;
+}
+
+/*NAV RIGHT*/
+.nav-right{
+    display: flex;
+    flex: 50%;
+    height: 110px;
+    align-items: center;
+}
+
+.nav-right-1{
+    display: flex;
+    flex: 70%;
+    height: 110px;
+    align-items: center;
+}
+
+.nav-inicio{
+    color: var(--button-nav-off-color);
+    padding: 20px 38px;
+
+    border: 1px solid;
+    border-color:  var(--bg-nav-color) var(--bg-nav-color) var(--bg-nav-color) white;
+}
+
+.nav-bio{
+    color: var(--button-nav-off-color);
+    padding: 20px 38px;
+
+    border: 1px solid;
+    border-color:  var(--bg-nav-color) var(--bg-nav-color) var(--bg-nav-color) white;
+}
+
+.nav-contato{
+    color: var(--button-nav-off-color);
+    padding: 20px 38px;
+
+    border: 1px solid;
+    border-color:  var(--bg-nav-color) white var(--bg-nav-color) white;
+}
+
+.nav-inicio:hover{
+    color: var(--button-nav-on-color);
+    text-shadow: 0px 0px 3px var(--button-nav-on-color);
+}
+
+.nav-bio:hover{
+    color: var(--button-nav-on-color);
+    text-shadow: 0px 0px 3px var(--button-nav-on-color);
+}
+
+.nav-contato:hover{
+    color: var(--button-nav-on-color);
+    text-shadow: 0px 0px 3px var(--button-nav-on-color);
+}
+
+.nav-whatsapp{
+    font-size: 25px;
+    margin: 20px 20px 20px 20px;
+
+    color: var(--whatsapp-color) ;
+}
+
+.nav-insta{
+    font-size: 25px;
+    margin: 20px 20px 20px 0px;
+
+    color: var(--instagram-color) ;
+}
+
+.nav-button{
+    display: none;
+    color: white;
+    width: 100px;
+    font-size: 40px;
+    position: absolute;
+    right: 15px;
+}
+
+.nav-right-2{
+    flex:30%;
+}
+
+@media only screen and (max-width: 1700px){
+
+    .nav-left-1{
+        flex: 40%;
+    }
+    
+    .nav-left-2{
+        flex:60%;
+    }
+
+}
+
+@media only screen and (max-width: 1500px){
+
+    .nav-left-1{
+        flex: 30%;
+    }
+    
+    .nav-left-2{
+        flex:70%;
+    }
+
+}
+
+@media only screen and (max-width: 1300px){
+
+    .nav-left-1{
+        flex: 25%;
+    }
+    
+    .nav-left-2{
+        flex:75%;
+    }
+
+}
+
+@media only screen and (max-width: 1200px){
+
+    .nav-left-1{
+        flex: 20%;
+    }
+    
+    .nav-left-2{
+        flex:80%;
+    }
+
+}
+
+@media only screen and (max-width: 1100px){
+
+    .nav-left-1{
+        flex: 15%;
+    }
+    
+    .nav-left-2{
+        flex:85%;
+    }
+
+}
+
+@media only screen and (max-width: 1050px){
+
+    .nav-left-1{
+        flex: 5%;
+    }
+    
+    .nav-left-2{
+        flex:95%;
+    }
+
+    .nav-button{
+        display: flex;
+    }
+
+
+    .nav-right-1{
+        position: absolute;
+	    display: flex;
+      	flex-direction: column;
+      	align-items: center;
+        width: 0px;
+        height: 420px;
+        top: 108px;
+        right: 0px;
+        z-index: 10;
+
+        background-color: var(--bg-nav-color);
+        border-bottom-left-radius: 5px;
+        transition: 500ms;
+    }
+    
+
+    #hidden{
+        transition: 500ms;
+        width:320px;
+    }
+
+    #hidden .nav-inicio{
+        display: flex;
+    }
+
+    #hidden .nav-bio{
+        display: flex;
+    }
+
+    #hidden .nav-contato{
+        display: flex;
+    }
+
+    .nav-inicio{
+        display: none;
+        width: 110px;
+        padding: 0px 0px 20px 60px;
+        margin: auto;
+        border: 1px solid;
+        border-color:  var(--bg-nav-color) var(--bg-nav-color) white var(--bg-nav-color);
+    }
+
+    .nav-bio{
+        display: none;
+        width: 100px;
+        padding: 0px 0px 20px 70px;
+        margin: auto;
+        border: 1px solid;
+        border-color:  var(--bg-nav-color) var(--bg-nav-color) white var(--bg-nav-color);
+    }
+
+    .nav-contato{
+        display: none;
+        width: 120px;
+        text-align: center;
+        padding: 0px 0px 20px 40px;
+        margin: auto;
+        border: 1px solid;
+        border-color:  var(--bg-nav-color) var(--bg-nav-color) white var(--bg-nav-color);
+    }
+
+    #hidden .nav-whatsapp{
+        display: flex;
+    }
+
+    #hidden .nav-insta{
+        display: flex;
+    }
+
+    .nav-whatsapp{
+        display: none;
+        margin: auto;
+    }
+
+    .nav-insta{
+        display: none;
+        margin: auto;
+        padding-bottom: 10px;
+    }
+    
+}
+
